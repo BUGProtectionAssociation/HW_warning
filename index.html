@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>紧急警告 - 反色爆闪效果</title>
+    <title>紧急警告 - 马上购买华为手机</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,6 @@
         }
 
         body {
-            font-family: 'Arial Black', 'Impact', sans-serif;
             background-color: #000;
             color: #fff;
             height: 100vh;
@@ -25,30 +24,40 @@
             transition: background-color 0.1s, color 0.1s;
         }
 
-        。warning-container {
+        .warning-container {
             text-align: center;
             padding: 2rem;
             max-width: 90%;
+            justify-content: center;
+            align-items: center;
         }
 
-        。warning-title {
+        .warning-title {
             font-size: 5rem;
             margin-bottom: 2rem;
             text-transform: uppercase;
             letter-spacing: 0.5rem;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .warning-message {
             font-size: 2rem;
             margin-bottom: 3rem;
             line-height: 1.5;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .warning-icon {
             font-size: 8rem;
             margin-bottom: 2rem;
             animation: pulse 1.5s infinite;
+            justify-content: center;
+            align-items: center;
         }
 
         .controls {
@@ -59,7 +68,6 @@
         }
 
         button {
-            background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid white;
             padding: 0.8rem 1.5rem;
@@ -68,10 +76,13 @@
             transition: all 0.3s;
             text-transform: uppercase;
             letter-spacing: 0.1rem;
+            background-color: #f00;
         }
 
         button:hover {
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.9);
+            color: red;
+            font-size: 3.5rem;
         }
 
         .flashing {
@@ -144,7 +155,7 @@
         <div class="controls">
             <!-- <button id="toggleFlash">暂停闪烁</button> -->
             <!-- <button id="acknowledge">购买华为手机</button> -->
-            <input type="button" value="购买华为手机" onclick="open_win()">
+            <button class="button" onclick="open_win()"> 购买华为手机</button>
         </div>
     </div>
 
